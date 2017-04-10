@@ -25,6 +25,7 @@ bashrc/bashrc
 #ctags/ctags
 #cmus
 #curl/curlrc
+docker/dockerfunc
 git/gitconfig
 git/gitignore
 git/gitattributes
