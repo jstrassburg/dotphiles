@@ -76,6 +76,7 @@ nginx_config(){
 # Container Aliases
 #
 plex(){
+  del_stopped plex
   docker run -d \
     --name=plex \
     --net=host \
