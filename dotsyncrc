@@ -74,6 +74,7 @@ git/gitattributes
 #zsh/zprofile
 #zsh/zshenv
 #zsh/zshrc
+X/Xmodmap
 [endfiles]
 
 # Hosts to sync
