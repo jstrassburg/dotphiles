@@ -21,7 +21,8 @@ dotsyncrc
 #ack/ackrc
 #aptitude
 bashrc/bashrc
-bin:bin
+bashrc/profile
+bin/dotsync
 #ctags/ctags
 #cmus
 #curl/curlrc
