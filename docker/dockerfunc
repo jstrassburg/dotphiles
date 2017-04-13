@@ -75,6 +75,19 @@ nginx_config(){
 #
 # Container Aliases
 #
+abcde(){
+  docker run -ti \
+    -v ~/.abcde.conf:/etc/abcde.conf \
+    -v /mnt/data/abcde_out/flac:/abcde/out \
+    --device /dev/cdrom \
+    vidiben/abcde
+}
+abcde_mp3(){
+  docker run -ti \
+    -v /mnt/data/abcde_out/mp3:/abcde/out \
+    --device /dev/cdrom \
+    vidiben/abcde
+}
 plex(){
   del_stopped plex
   docker run -d \
