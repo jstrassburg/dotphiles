@@ -84,14 +84,6 @@ abcde(){
     --device /dev/cdrom \
     vidiben/abcde
 }
-abcde_mp3(){
-  del_stopped abcde_mp3
-  docker run -ti \
-    --name=abcde_mp3
-    -v /mnt/data/abcde_out/mp3:/abcde/out \
-    --device /dev/cdrom \
-    vidiben/abcde
-}
 plex(){
   del_stopped plex
   docker run -d \
@@ -146,16 +138,17 @@ http(){
 		--log-driver none \
 		${DOCKER_REPO_PREFIX}/httpie "$@"
 }
-keypassxc(){
-	del_stopped keypassxc
+keepassxc(){
+	del_stopped keepassxc
 
 	docker run -d \
 		-v /etc/localtime:/etc/localtime:ro \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
 		-v /usr/share/X11/xkb:/usr/share/X11/xkb:ro \
+		-v /mnt/data/dropbox/Home:/keepassdb \
 		-e "DISPLAY=unix${DISPLAY}" \
 		-v /etc/machine-id:/etc/machine-id:ro \
-		--name keypassxc \
+		--name keepassxc \
 		${DOCKER_REPO_PREFIX}/keepassxc
 }
 netcat(){
