@@ -32,3 +32,5 @@ comic() {
 }
 
 export PATH="/usr/local/sbin:$PATH"
+
+source ~/.dockerfunc
