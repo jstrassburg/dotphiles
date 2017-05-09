@@ -80,7 +80,7 @@ abcde(){
   docker run -ti \
     --name=abcde \
     -v ~/.abcde.conf:/etc/abcde.conf \
-    -v /mnt/data/abcde_out/flac:/abcde/out \
+    -v /mnt/data/music/flac:/abcde/out \
     --device /dev/cdrom \
     vidiben/abcde
 }
