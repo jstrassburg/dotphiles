@@ -33,4 +33,11 @@ comic() {
 
 export PATH="/usr/local/sbin:$PATH"
 
+# go paths
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOROOT/bin
+
 source ~/.dockerfunc
