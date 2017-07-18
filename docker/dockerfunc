@@ -80,7 +80,7 @@ abcde(){
   docker run -ti \
     --name=abcde \
     -v ~/.abcde.conf:/etc/abcde.conf \
-    -v /mnt/data/abcde_out/flac:/abcde/out \
+    -v /mnt/data/music/flac:/abcde/out \
     --device /dev/cdrom \
     vidiben/abcde
 }
@@ -145,9 +145,10 @@ keepassxc(){
 		-v /etc/localtime:/etc/localtime:ro \
 		-v /tmp/.X11-unix:/tmp/.X11-unix \
 		-v /usr/share/X11/xkb:/usr/share/X11/xkb:ro \
-		-v $HOME/Dropbox/Home:/keepassdb \
-		-e "DISPLAY=unix${DISPLAY}" \
 		-v /etc/machine-id:/etc/machine-id:ro \
+		-v $HOME/Dropbox/Home:/keepassdb \
+		-v $HOME/.config/keepassxc:/root/.config/keepassxc \
+		-e "DISPLAY=unix${DISPLAY}" \
 		--name keepassxc \
 		${DOCKER_REPO_PREFIX}/keepassxc
 }
