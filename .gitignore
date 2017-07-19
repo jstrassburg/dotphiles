@@ -20,6 +20,7 @@ ssh/known_hosts
 ssh/master/*
 ssh/*.pem
 ssh/g_cloud
+ssh/test-kitchen
 subversion/README.txt
 subversion/auth/*
 gnupg/crls.d/*
