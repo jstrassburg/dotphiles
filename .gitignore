@@ -18,6 +18,8 @@ ssh/id*
 ssh/environment*
 ssh/known_hosts
 ssh/master/*
+ssh/*.pem
+ssh/g_cloud
 subversion/README.txt
 subversion/auth/*
 gnupg/crls.d/*

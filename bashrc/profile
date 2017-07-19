@@ -41,7 +41,7 @@ export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOROOT/bin
 
 # git for home git for work
-alias ggmail='git config user.name "JiM Strassburg";git config user.email jstrassburg@gmail.com'
-alias gwork='git config user.name "JiM Strassburg";git config user.email jstrassburg@directs.com'
+alias ggmail='git config --global user.name "JiM Strassburg";git config --global user.email jstrassburg@gmail.com'
+alias gwork='git config --global user.name "JiM Strassburg";git config --global user.email jstrassburg@directs.com'
 
 source ~/.dockerfunc
