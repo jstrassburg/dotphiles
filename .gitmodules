@@ -18,4 +18,4 @@
 	url = git@github.com:jstrassburg/dotvim.git
 [submodule "bash-git-prompt"]
 	path = bash-git-prompt
-	url = git@github.com:magicmonty/bash-git-prompt.git
+	url = https://github.com/magicmonty/bash-git-prompt.git
