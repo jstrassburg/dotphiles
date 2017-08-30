@@ -2,13 +2,13 @@ export PATH="/opt/local/bin:/opt/local/sbin:$HOME/bin:$PATH"
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-export PS1="< \w > 🥃  "
+export PS1="< \w > $ "
 
 if [ $(id -u) -eq 0 ];
 then
     export PS1="< \w > \[\033[31m\]#\[\033[00m\] "
 else
-    export PS1="< \w > 🥃  "
+    export PS1="< \w > $ "
 fi
 
 # bash-git-prompt
