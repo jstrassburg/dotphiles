@@ -58,9 +58,9 @@ fi
 
 if [ $(id -u) -eq 0 ];
 then
-  export PS1="< \w >\[\033[31m\]#\[\033[00m\] "
+  export PS1="\u@\h < \w >\n\[\033[31m\]#\[\033[00m\] "
 else
-  export PS1="< \w > $ "
+  export PS1="\u@\h < \w >\n$ "
 fi
 unset color_prompt force_color_prompt
 
