@@ -1,0 +1,5 @@
+#!/bin/sh
+#Generated with love at Sat Sep 1 21:39:05 2018 by JetBrains Toolbox 1.11.4269 (Aug 30 2018)
+
+"/home/puke/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/182.4129.34/bin/pycharm.sh" "$@"
+
